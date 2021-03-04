@@ -1,0 +1,22 @@
+.formStyled{
+
+}
+.buttonStyled{
+    width: 100%;
+}
+.createAccount{
+    padding-top: 20px;
+    text-align: center;
+}
+.createAccount:first-child{
+    text-align: center;
+}
+.createAccount span:last-child{
+    cursor: pointer;
+    color:var(--bluePuplePrimary)
+}
+.createAccount span:last-child:hover{
+
+    text-decoration: underline;
+   
+}
