@@ -1,0 +1,6 @@
+.products{
+    width: 100%;
+   
+    overflow-y: auto;
+    max-height: 60vh;
+}

@@ -1,0 +1,114 @@
+.componentCart{
+    width: 100%;
+    position: fixed;
+    bottom: -1px; /* <-- add this */
+    top:0;
+    transition: all 1s;
+    transition-timing-function: linear;
+
+}
+
+.showComponentCart{
+  z-index: 5;
+}
+.hiddenComponentCart{
+    z-index: -1;  
+}
+
+.cart{
+    display: block;
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    top:0;
+    right: 0;
+    background-color: white;
+    z-index: 5;
+    transform:translateX(150%);
+    transition: transform 1s;
+    transition-timing-function: linear;
+}
+
+.showCart{
+    transform:translateX(0%);
+}
+.hiddenCart{
+    transform:translateX(150%);
+   
+}
+.shadow{
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    top:0;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 2;
+    transition:transform 1s ;
+    transition-timing-function: linear;
+
+}
+.showShadow{
+    transform:translateX(-30%);
+
+}
+.hiddenShadow{
+    transform:translateX(-150%);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.header{
+    width: 100%;
+    color:var(--blackDefault);
+  
+}
+.header > div:first-child{
+    width: 85%;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header > div:last-child{
+    width: 15%;
+    
+}
+.products{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.products div:first-child{
+    width: 30%;
+}
+.products div:last-child{
+    width: 60%;
+}
+.products div:first-child img{
+    width: 100%;
+}
+
+
+
+@keyframes openCart{
+    from{
+        transform:translateX(150%);
+
+    }to{
+        transform:translateX(0%);
+        display: block;
+    }
+}
+
+@keyframes closeCart{
+    from{
+        transform:translateX(0%);
+
+    }to{
+        transform:translateX(150%);
+        display: none;
+    }
+}

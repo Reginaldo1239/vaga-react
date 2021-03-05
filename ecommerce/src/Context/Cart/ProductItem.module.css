@@ -1,0 +1,29 @@
+.productItem{
+    width: 95%;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+}
+.productItem > div:first-child{
+    width: 30%;
+    
+}
+.productItem > div:last-child{
+    position: relative;
+    width: 60%;
+
+  
+}
+.productItem div:first-child img{
+    width: 100%;
+}
+
+.productItem  .removeProductItem{
+    position: absolute  ;
+    right: 0;
+   
+}
+.buttonCloseVariant {
+    font-size: 15px;
+    
+}
