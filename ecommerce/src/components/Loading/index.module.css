@@ -1,0 +1,38 @@
+.loading{
+    position: relative;
+    width: 35px;
+    height: 35px;
+   
+}
+.loading div:first-child{
+    position: absolute;
+    border:1px solid gray;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+   
+}
+.loading div:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:2px solid var(--bluePuplePrimary);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: animationLoading 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animationLoading{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
