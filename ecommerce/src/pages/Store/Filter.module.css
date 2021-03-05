@@ -1,0 +1,88 @@
+.filter{
+    overflow: hidden;
+    width: 100%;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    border-radius: 10px;
+    max-height: 0px;
+    transition: max-height;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.clean{
+    width: 100%;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.clean:hover{
+    color:var(--bluePuplePrimary); 
+}
+.openFilter{
+    max-height: 250px;
+}
+.closeFilter{
+    max-height: 0px;
+}
+.typeFilter{
+    width: 20%;
+    font-family: Arial, sans-serif;
+
+}
+.typeFilter ul{
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.typeFilter:last-child ul{
+    width: 80%;
+}
+.typeFilter h4{
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+
+.typeFilter li{
+    font-size: 16px;
+    padding-bottom: 5px;
+    color:#aaa;
+    cursor: pointer;
+}
+.typeFilter li:hover{
+    color:var(--bluePuplePrimary);
+    text-decoration: underline;
+    text-decoration-color:var(--bluePuplePrimary) ;
+}
+.typeFilter li:first-child{
+    color:var(--blackDefault);
+    text-decoration: none;
+}
+.typeFilter .liActive{
+    color:var(--bluePuplePrimary);
+    text-decoration: underline;
+    text-decoration-color:var(--bluePuplePrimary) ;
+    border-color:var(--bluePuplePrimary);
+}
+
+.tagFlex{
+    justify-content: space-between;
+}
+.tag {
+    width: 45%;
+    margin-bottom: 10px;
+    border:1px solid #aaa;
+    padding: 4px 10px;
+    border-radius:15px ;
+    color: #aaa;
+    cursor: pointer;
+}
+.tag:hover{
+    border-color: var(--bluePuplePrimary);
+    color:var(--bluePuplePrimary);
+}
+.tagActive{
+    border-color: var(--bluePuplePrimary);
+    color:var(--bluePuplePrimary); 
+
+}

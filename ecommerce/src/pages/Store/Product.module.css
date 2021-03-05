@@ -1,0 +1,33 @@
+.productCard{
+    width:100%; 
+}
+.img {
+    overflow: hidden;
+}
+.img img{
+    overflow: hidden;
+    transform: scale(1.0); 
+    transition: transform 1s;
+}
+.img img:hover{
+    transform: scale(1.1); 
+}
+.imgCard img{
+    width: 100%;
+}
+
+.imgList img{
+    width: 20%;
+}
+.title{
+    color:#999;
+    cursor: pointer;
+    transition:color 0.5s;
+}
+.title:hover{
+    color: var(--bluePuplePrimary);
+}
+.priceCard{
+    color:#666;
+    
+}

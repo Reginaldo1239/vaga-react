@@ -1,0 +1,15 @@
+.gridVariantCard{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 22% 22% 22% 22%;
+    row-gap: 50px;
+    justify-content: space-between
+
+
+
+ 
+    
+ 
+  
+
+}

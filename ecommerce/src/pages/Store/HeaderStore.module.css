@@ -1,0 +1,41 @@
+.headerStore{
+    padding: 40px 0;
+}
+.flexVarient{
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+.nav li{
+    margin-right:  40px ;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+
+    transition: all;
+    transition-duration:0.5s;
+}
+.nav li:hover{
+    color:var(--blackDefault);
+    text-decoration-color: var(--blackDefault);
+}
+.nav .liActive{
+    color:var(--blackDefault);
+    text-decoration-color: var(--blackDefault); 
+}
+.buttonVariant{
+    min-width: 94px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #e6e6e6;
+    font-size: 17px;
+    border-radius: 3px;
+    border:1px solid #e6e6e6;
+}
+.buttonVariant:hover{
+   color:white;
+}
+.itemButton{
+    margin-left: 10px;
+}
