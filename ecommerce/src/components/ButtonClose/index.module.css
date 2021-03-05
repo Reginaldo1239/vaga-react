@@ -1,0 +1,10 @@
+.buttonClose {
+    font-size: 35px; 
+    color:var(--blackDefault);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.buttonClose:hover {
+    color:var(--bluePuplePrimary)
+}
