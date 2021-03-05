@@ -6,6 +6,8 @@
     padding: 10px 5px;
     outline: none;
     border-color: var(--bluePuplePrimary);
+    transition: all;
+    transition-duration: 0.5s;
 }
 .button:hover{
     background-color: var(--bluePupleSegundary);
