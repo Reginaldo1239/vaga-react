@@ -13,3 +13,31 @@ export const maskCreditCard= (params)=>{
     }
     throw 'numberCard no is a string';
 }
+
+
+export const maskCpfOrCnpj =(params)=>{
+    let {event} = params;
+    let value;
+    if(event){
+        value = event.currentTarget.value;
+        console.log(value)
+       if(event.key=='Backspace' && event.type=='keydown'){
+          value = value.slice(0,value.length-1); 
+           event.preventDefault();
+       }else{
+       value = value.replace(/\D/g,'');
+       value = value.replace(/(\d{3})/,'$1.');
+       value = value.replace(/(\d{3})\.(\d{3})/,'$1.$2.');
+       value = value.replace(/(\d{3})\.(\d{3})\.(\d{3})/,'$1.$2.$3-');
+       if(value.length>14){
+           value= value.replace(/\D/g,'');
+           value = value.replace(/^(\d{2})/, "$1.");
+           value = value.replace(/^(\d{2}).(\d{3})/, "$1.$2.")
+           value = value.replace(/^(\d{2}).(\d{3}).(\d{3})/, "$1.$2.$3/");
+           value = value.replace(/^(\d{2}).(\d{3}).(\d{3})\/(\d{4})/, "$1.$2.$3/$4-");
+       }
+    }
+    }
+
+    return value.slice(0,18);
+}
