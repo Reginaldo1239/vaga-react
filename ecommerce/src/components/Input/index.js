@@ -12,7 +12,7 @@ export default function Input(props){
             type={type?type:'text'}
             name={name?name:''}
             placeholder={placeholder?placeholder:''}
-            value={value}
+            value={value?value:''}
             onChange={(event)=>props.onChange(event) }
             />
     )
