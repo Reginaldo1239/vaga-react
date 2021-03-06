@@ -1,0 +1,58 @@
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.formGroupCvc{
+    width: 80px;
+}
+.labelValid {
+    width: 100%;
+}
+.inputValid {
+    width: 80px;
+    margin-right: 10px;
+}
+.icons{
+    width: 100%;
+ 
+}
+.icons div{
+    display: inline-block;
+    width: 30px;
+}
+.icons img{
+    width: 70px;
+}
+
+.cvv{
+    display: inline-block;
+    width: 60px;
+}
+
+.formGroupCvvAndFlagCard div:first-child{
+    display: inline-block;
+    width: 80px;
+}
+
+.flagCard{
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.flagCard img{
+    display: inline-block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid; 
+    border-color: white;
+    cursor: pointer;
+    padding: 1px;
+} 
+.flagCard img:hover{
+   background-color: var(--bluePuplePrimary);
+   border-radius: 5px;
+} 
+.flagCardActive img{
+    background-color: var(--bluePuplePrimary);
+    border-radius: 5px;
+}
