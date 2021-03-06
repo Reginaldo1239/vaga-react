@@ -13,7 +13,7 @@ export default function Input(props){
             name={name?name:''}
             placeholder={placeholder?placeholder:''}
             value={value}
-            onChange={(event)=>props.onChange?props.onChange(event):null}
+            onChange={(event)=>props.onChange(event) }
             />
     )
 }
