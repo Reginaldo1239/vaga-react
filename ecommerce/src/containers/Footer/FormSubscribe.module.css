@@ -1,0 +1,23 @@
+.formVariant{
+    padding: 0;
+    background-color: var(--blackDefault);
+}
+.inputVariant{
+    padding: 0;
+    background-color: var(--blackDefault);
+    border-color: var(--blackDefault);
+    border-bottom: 2px solid rgba(204,204,204, 0.1);
+    margin-bottom: 20px;
+    color: white;
+
+}
+.buttonVariant{
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border:none;
+}
+.buttonVariant:hover{
+    background-color: white;
+    color:var(--bluePuplePrimary)
+}

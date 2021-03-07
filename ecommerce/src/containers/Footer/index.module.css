@@ -1,0 +1,36 @@
+.footer{
+    background-color: var(--blackDefault);
+    color: white;
+}
+.footer h4{
+    padding-bottom: 30px;
+    font-family: Montserrat-Bold;
+}
+.footer li{
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.footer li:hover{
+   color:var(--bluePuplePrimary)
+}
+
+.gridVariant{
+    grid-template-columns: 20% 20% 30% 25%;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.getInTouch{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.copyRight{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
