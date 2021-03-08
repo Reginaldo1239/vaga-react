@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import className from 'classnames';
-import useStore from '../../Hooks/useStore';
+import {useStore} from '../../Hooks/Store';
 import Button from '../../components/Button';
 import Style from './HeaderStore.module.css';
 import StyleCommon from '../../common.module.css';
@@ -8,7 +8,7 @@ import StyleCommon from '../../common.module.css';
 const ListLi =(props)=>{
     const liRef = useRef([]);
     const optionsLi=['Todos produtos','Mulher','Homem','Mochila','Watches'];
-    useEffect(()=>{
+    useEffect(()=>{ 
         addClassNameLiActive(0);
     },[])
     const addClassNameLiActive=(index)=>{

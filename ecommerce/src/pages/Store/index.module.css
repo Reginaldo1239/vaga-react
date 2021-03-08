@@ -1,0 +1,12 @@
+.icons{
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+}
+.iconAbsolute > div{
+    margin-left: 10px;
+}
+.iconAbsolute{
+    position: absolute;
+    right: 0;
+}

@@ -1,15 +1,12 @@
 .gridVariantCard{
-    display: grid;
-    margin-top: 20px;
     grid-template-columns: 22% 22% 22% 22%;
     row-gap: 50px;
     justify-content: space-between
 
-
-
- 
-    
- 
-  
-
+}
+.gridVariantList{
+    margin-top: 20px;
+    grid-template-columns: 100%;
+    row-gap: 50px;
+    justify-content: space-between
 }

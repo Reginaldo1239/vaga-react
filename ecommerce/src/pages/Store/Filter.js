@@ -1,10 +1,10 @@
 import React,{useEffect, useState,useRef} from 'react';
 import classNames from 'classnames';
-import useStore from '../../Hooks/useStore';
+import {useStore} from '../../Hooks/Store';
 import Style from './Filter.module.css';
 import StyleCommon from '../../common.module.css';
 export default function Filter (props){
-    const {showFilter} = useStore();
+    const {showFilter,changeFilter} = useStore();
     const liClassificationRefs = useRef([]);
     const liPriceRefs = useRef([]);
     const liColorRefs = useRef([]);
@@ -42,13 +42,14 @@ export default function Filter (props){
 
     },[])
     // changeLiActive remove a class LiActive de algum array de refs e adiciona na li que foi clicada
+    const handleFilter=(typeFilter,value)=>{
+        changeFilter(typeFilter,value)
+    }
     const changeLiActive=(arrayRef,indexLiClicked)=>{
         arrayRef.map((theRef)=>
         theRef.classList.remove(Style.liActive)
         )
-       
-        arrayRef[indexLiClicked].classList.add(Style.liActive)
-            
+        arrayRef[indexLiClicked].classList.add(Style.liActive) 
     }
 
     const changeTagActive=(arrayRef,indexTagClicked)=>{
@@ -70,7 +71,6 @@ export default function Filter (props){
     return(<>
         <div className={classNames(Style.filter,Style.flexVariant,StyleCommon.flex,{[Style.openFilter]:showFilter,[Style.closeFilter]:!showFilter})}>
             <div 
-          
             onClick={()=>resetElementsActive()}
             className={Style.clean}>
             limpar
@@ -82,7 +82,7 @@ export default function Filter (props){
                         <li 
                         className={classNames({[Style.liActive]:index==0})}
                         key={index}
-                        onClick={()=>changeLiActive(liClassificationRefs.current,index)} 
+                        onClick={()=>{changeLiActive(liClassificationRefs.current,index);handleFilter('classification',objectValue.id)}} 
                         ref={el=>liClassificationRefs.current[index]=el}>
                             {objectValue.text}
                         </li> 
@@ -95,7 +95,7 @@ export default function Filter (props){
                     {liPrice.map((objectValue,index)=>
                          <li 
                          key={index}
-                         onClick={()=>changeLiActive(liPriceRefs.current,index)} 
+                         onClick={()=>{changeLiActive(liPriceRefs.current,index);handleFilter('price',objectValue.id)}} 
                          ref={el=>liPriceRefs.current[index]=el}>
                             {objectValue.text}
                         </li>     
@@ -108,7 +108,7 @@ export default function Filter (props){
                     {liColor.map((objectValue,index)=>
                        <li 
                        key={index}
-                       onClick={()=>changeLiActive(liColorRefs.current,index)}
+                       onClick={()=>{changeLiActive(liColorRefs.current,index);handleFilter('color',objectValue.id)}}
                        ref={el=>liColorRefs.current[index]=el}>
                            {objectValue.text}
                        </li>
@@ -122,7 +122,7 @@ export default function Filter (props){
                         {tags.map((objectValue,index)=>
                          <div 
                          key={index}
-                         onClick={()=>changeTagActive(tagsRefs.current,index)}
+                         onClick={()=>{changeTagActive(tagsRefs.current,index);;handleFilter('tag',objectValue.id)}}
                          ref={el=>tagsRefs.current[index]=el}
                          className={classNames(Style.tag)}>
                              {objectValue.text}

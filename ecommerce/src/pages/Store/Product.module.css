@@ -1,6 +1,11 @@
 .productCard{
     width:100%; 
 }
+.productList{
+    justify-content: space-between;
+    border: 1px solid var(--grayLighter);
+    cursor: pointer;
+}
 .img {
     overflow: hidden;
 }
@@ -16,8 +21,15 @@
     width: 100%;
 }
 
-.imgList img{
+.imgList{
     width: 20%;
+}
+.imgList img{
+    width: 100%;
+}
+.infoProductList{
+    width: 60%;
+ 
 }
 .title{
     color:#999;

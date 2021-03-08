@@ -4,7 +4,7 @@ import Style from './Pagination.module.css';
 export default function Pagination (props){
     return (
         <div className={Style.pagination}>
-
+            <Button></Button>
         </div>
     )
 }
