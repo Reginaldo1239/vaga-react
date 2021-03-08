@@ -18,7 +18,12 @@
     width: 100%;
 }
 
-.productItem  .removeProductItem{
+.removeProductItem{
+    position: relative  ;
+   padding-bottom:15px ;
+   
+}
+.removeProductItem > div{
     position: absolute  ;
     right: 0;
    
@@ -26,4 +31,8 @@
 .buttonCloseVariant {
     font-size: 15px;
     
+}
+
+.infoProduct div{
+    padding: 10px 0;
 }

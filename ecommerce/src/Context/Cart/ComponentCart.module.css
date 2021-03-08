@@ -91,7 +91,9 @@
     width: 100%;
 }
 
-
+.boxOrderClose{
+    margin: 20px 0;
+}
 
 @keyframes openCart{
     from{

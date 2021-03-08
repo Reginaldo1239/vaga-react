@@ -1,13 +1,18 @@
 import React,{useState,useEffect} from 'react';
+import {useHistory} from 'react-router-dom';
+import StyleCommon from '../../common.module.css';
+import Style from  './ComponentCart.module.css';
+import Products from './Products';
 import classNames from 'classnames';
 import ButtonClose from '../../components/ButtonClose';
-import ProductItem from './ProductItem';
-import Products from './Products';
-import Style from  './ComponentCart.module.css';
-import StyleCommon from '../../common.module.css';
+import Button from '../../components/Button';
+
+
+
 export default function ComponentCart(props){
-    let {showCart} = props;
-    
+    const history = useHistory();
+    let {showCart,productsSelected,removeProducItem} = props;
+ 
     
     return(
         <div className={classNames(Style.componentCart,{[Style.showComponentCart]:showCart,[Style.hiddenComponentCart]:!showCart})}>
@@ -22,14 +27,15 @@ export default function ComponentCart(props){
                                 <ButtonClose onClick={()=>props.closeCart()}></ButtonClose>
                             </div>
                         </header>
-                        <Products></Products> 
+                        <Products 
+                        removeProducItem={removeProducItem}
+                        productsSelected={productsSelected}></Products> 
                    
-                          
+                        <div className={Style.boxOrderClose}>
+                            <Button onClick={()=>{history.push('/cart'); props.closeCart()}}> fechar pedido</Button>
+                        </div> 
                     </div> 
-
                 </div>
-              
-               
         </div>
     )
 }

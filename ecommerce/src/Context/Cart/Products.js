@@ -1,17 +1,19 @@
-import React from 'react';
+import React,{ useEffect } from 'react';
 import ProductItem from './ProductItem';
 import Style from './Products.module.css';
 export default function Products(props){
+    let {productsSelected,removeProducItem} = props;
+    if(productsSelected.length===0)  return <div className={Style.cartIsEmpty}>o seu carrinho está vázio</div>
     return(
         <div className={Style.products}>
-            <ProductItem index={1}></ProductItem>
-            <ProductItem index={2}></ProductItem>
-            <ProductItem index={3}></ProductItem>
-            <ProductItem index={4}></ProductItem>
-            <ProductItem index={5}></ProductItem>
-            <ProductItem index={6}></ProductItem>
-            <ProductItem index={7}></ProductItem>
-            <ProductItem index={8}></ProductItem>
+        
+         {productsSelected.map((infoProduct,index)=>
+                <ProductItem 
+                key={index}
+                removeProducItem={removeProducItem}
+                infoProduct={infoProduct}
+                index={index}></ProductItem>
+         )}
 
         </div>
     )
