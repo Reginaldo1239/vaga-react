@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import classnames from 'classnames';
+import {useHistory} from 'react-router-dom';
 import Form from '../../components/Form';
 import FormGroup from '../../components/FormGroup';
 import Input from '../../components/Input';
@@ -7,6 +8,7 @@ import Label from '../../components/Label';
 import {maskCpfOrCnpj, maskCreditCard} from '../../util//mask';
 import LogoMasterCard from '../../assets/logo-mastercard.png';
 import {minLength,cnpjValid,cpfValid} from '../../util/validation';
+import MsgError from '../../components/MsgError';
 import LogoVisa from '../../assets/visa-logo.png';
 import Button from '../../components/Button';
 import Style from './FormCreditCard.module.css'
@@ -23,10 +25,12 @@ export default function FormCreditCard (props){
     }
     const [formValues,setFormValues] = useState(initialStateForm);
     const [formErrors,setFormErrors] = useState(initialStateForm);
+    const history = useHistory();
     const submit=()=>{
-        console.log('submit')
+        console.log('validForm')
+        console.log(validForm());
         if(validForm()){
-
+            history.push('/thank_purchase')
         }
      }
 
@@ -69,7 +73,12 @@ export default function FormCreditCard (props){
             if(!minLength(value,1)){
                 textError = `o campo está vázio `;
             }
-      /*      switch(name){
+            switch(name){
+                case'flagCard':
+                        if(!minLength(value,1)){
+                            textError = `selecione um cartão de crédito`;
+                        }
+                break;
                 case 'cpfOrCnpj':
                     //remove o espaço entre os números do cartao
                    value= value.replace(/\D/g,'');
@@ -79,15 +88,18 @@ export default function FormCreditCard (props){
                         textError = 'cnpj inválido';
                     }
                     break;
-                
+                default:
+                    if(!minLength(value,1)){
+                        textError = `o campo está vázio `;
+                    }
             }
-           */
+           
             if(textError.length>0){
-                allErrors.push({name:textError});
+                allErrors.push({[name]:textError});
             }
             setFormErrors(formErrors=>({ ...formErrors,[name]:textError  }))
          }
-         
+         console.log(allErrors)
          return allErrors.length===0;
      }
 
@@ -128,7 +140,9 @@ export default function FormCreditCard (props){
                 </div>
                  <div onClick={()=>handleFlag('master-card')} className={classnames(Style.flagCard,{[Style.flagCardActive ]:formValues.flagCard=='master-card'})}>
                      <img src={LogoMasterCard}/>
+                     <MsgError textError={formErrors.flagCard}></MsgError>
                  </div>
+                 
             </div>
             <FormGroup otherClassNames={StyleCommon.flex}>
                 <div className={Style.labelValid} >
