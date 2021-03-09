@@ -1,0 +1,11 @@
+.main{
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.main > div:first-child{
+    width: 40%;
+}
+.main > div:last-child{
+    width: 50%;
+}
