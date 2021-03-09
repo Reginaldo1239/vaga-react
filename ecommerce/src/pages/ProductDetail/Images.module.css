@@ -1,0 +1,15 @@
+.images{
+    justify-content: space-between;
+}
+.images img{
+    width: 100%;
+    transition: all 2s;
+}
+
+.listImages{
+    width: 10%;
+}
+.singleImage{
+    width: 80%;
+}
+
