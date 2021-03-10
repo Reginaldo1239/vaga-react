@@ -11,4 +11,9 @@
 }
 .button:hover{
     background-color: var(--bluePupleSegundary);
+    opacity: 0.8;
+}
+.button:active{
+    background-color: var(--bluePupleSegundary);
+    opacity: 0.1;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-
+import MsgError from '../MsgError';
 import Style from './index.module.css';
 export default function Input(props){
     let {type,name,textError,placeholder,value,otherClassNames} =props;
@@ -16,11 +16,9 @@ export default function Input(props){
             placeholder={placeholder?placeholder:''}
             value={value?value:''}
             onChange={(event)=>props.onChange(event) }
-            onKeyDown={(event)=>props.onKeyDown?props.onKeyDown(event): null}
+            onKeyDown={(event)=>props.onKeyDown?props.onKeyDown(event): 'null'}
             />
-            <div > 
-                {textError}
-            </div> 
+            <MsgError textError={textError}></MsgError>
                   
             </div>
     )

@@ -20,7 +20,6 @@ export const maskCpfOrCnpj =(params)=>{
     let value;
     if(event){
         value = event.currentTarget.value;
-        console.log(value)
        if(event.key=='Backspace' && event.type=='keydown'){
           value = value.slice(0,value.length-1); 
            event.preventDefault();

@@ -1,10 +1,15 @@
 .productCard{
     width:100%; 
+    
 }
 .productList{
     justify-content: space-between;
     border: 1px solid var(--grayLighter);
     cursor: pointer;
+    transition: transform 1s;
+}
+.productList:hover{
+    transform:scaleY(1.1);
 }
 .img {
     overflow: hidden;
@@ -43,3 +48,12 @@
     color:#666;
     
 }
+@media only screen and (max-width: 600px) {
+    .gridVariantCard{
+        grid-template-columns: 45% 45%;
+        row-gap: 50px;
+        justify-content: space-between
+    
+    }
+ 
+  }

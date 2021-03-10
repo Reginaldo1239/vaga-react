@@ -19,13 +19,13 @@
     color:var(--bluePuplePrimary); 
 }
 .openFilter{
-    max-height: 250px;
+    max-height: 1000px;
 }
 .closeFilter{
     max-height: 0px;
 }
 .typeFilter{
-    width: 20%;
+    width: 24%;
     font-family: Arial, sans-serif;
 
 }
@@ -69,7 +69,7 @@
     justify-content: space-between;
 }
 .tag {
-    width: 45%;
+    width: 49%;
     margin-bottom: 10px;
     border:1px solid #aaa;
     padding: 4px 10px;
@@ -85,4 +85,42 @@
     border-color: var(--bluePuplePrimary);
     color:var(--bluePuplePrimary); 
 
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+.filter{
+    margin: 15px 0;
+}    
+.typeFilter{
+    width: 50%;
+}
+.typeFilter ul{
+     width: 100%;
+    padding: 0 20px;     
+}
+.typeFilter:last-child ul{
+    width: 100%;
+}  
+}
+    
+@media only screen and (max-width: 600px) {
+.filter{
+    margin: 15px 0;
+}    
+.typeFilter{
+    width: 100%;
+}
+.typeFilter ul{
+    
+    width: 100%;
+    padding: 0 20px;     
+}
+.typeFilter:last-child ul{
+    width: 100%;
+}  
 }

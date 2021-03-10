@@ -20,9 +20,13 @@ export default function (props){
     }
     
     const submit=()=>{
-       if(formValues.email=='teste@gmail.com'&&formValues.password=="123456"){
+       if(formValues.email=='rock_apps@gmail.com'&&formValues.password=="rock@2020"){
         localStorage.setItem('userId','1');
         localStorage.setItem('token','123456');
+        localStorage.setItem('userName','rock');
+        if(!localStorage.getItem('imageProfile')){
+            localStorage.setItem('imageProfile','image-profile1.jpg');
+        }
         history.push('/');
        }else{
         setTextError('email ou senha incorretos')

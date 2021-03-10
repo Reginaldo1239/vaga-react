@@ -16,8 +16,7 @@ export default function Header(props){
         localStorage.removeItem('token')
         localStorage.removeItem('userName')
         setUserName(null)
-        history.push('/')
-      
+        history.push('/')  
     }
     return(
         <>
@@ -57,6 +56,8 @@ export default function Header(props){
             </Container>
         </div>
         <MenuMobile 
+               userName={userName}
+               logout={()=>logout()}
                menuMobileVisible={menuMobileVisible} 
                ></MenuMobile>
         </>

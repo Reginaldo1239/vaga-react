@@ -1,12 +1,40 @@
 .gridVariantCard{
     grid-template-columns: 22% 22% 22% 22%;
     row-gap: 50px;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 10px 0;
 
 }
 .gridVariantList{
-    margin-top: 20px;
+    padding: 5px 0;
     grid-template-columns: 100%;
     row-gap: 50px;
     justify-content: space-between
 }
+
+@media only screen and (max-width: 992px) {
+    .headerStore{
+            padding: 0px 0;
+            padding-top: 20px;
+        }
+    .containerNav{
+            margin-bottom: 30px;
+        }
+    .nav li{
+        margin-right:  20px ;
+    }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .gridVariantCard{
+            grid-template-columns: 45% 45%;
+    
+        
+        }
+        .gridVariantList{
+            padding: 10px 0;
+            row-gap: 10px;
+           
+        }
+        
+      }

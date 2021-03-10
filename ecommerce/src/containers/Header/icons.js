@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import classNames from 'classnames';
 import {useCart} from '../../Hooks/Cart';
-import { HiShoppingCart,HiOutlineSearch } from "react-icons/hi";
+import { HiShoppingCart,HiOutlineSearch,HiOutlineUserCircle } from "react-icons/hi";
 import { GoThreeBars,GoX } from "react-icons/go";
 
 import Style from './icons.module.css';

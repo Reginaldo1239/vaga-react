@@ -7,7 +7,7 @@ export default function props(props){
         <button 
         type={type?type:'button'} 
         className={classNames(Style.button,otherClassNames)}
-        onClick={(event)=>props.onClick(event)}
+        onClick={(event)=>props.onClick?props.onClick(event):null}
         >
             {children}
         </button>

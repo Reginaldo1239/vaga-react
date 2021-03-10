@@ -2,3 +2,10 @@
     font-size: 35px;
     color:var(--blackDefault);
 }
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        font-size: 25px;
+        color:var(--blackDefault);
+    }
+}

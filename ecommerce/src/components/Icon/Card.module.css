@@ -1,0 +1,19 @@
+.card {
+    width: 30px;
+    height: 30px;
+}
+
+.card  div {
+  width: 50%;
+  height: 50%;
+   border: 1px solid #ccc;
+   cursor: pointer;
+}
+
+.card:hover div{
+    border-color: var(--bluePuplePrimary);
+}
+
+.active div{
+    border-color: var(--bluePuplePrimary);
+}
