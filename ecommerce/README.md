@@ -31,3 +31,14 @@ para logar no sistema use
 ```
 
 <img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot0.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot1.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot2.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot3.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot4.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot5.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot6.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot7.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot8.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot9.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot10.png'>
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot11.png'>
