@@ -1,0 +1,43 @@
+
+.icons{
+    width: 100%;
+    padding-top: 5px;
+}
+.flexVariant{
+    justify-content: flex-end;
+}
+.icon{
+  
+    cursor: pointer;
+}
+.iconCart{
+    position: relative;
+    
+}
+.iconCartLength{
+    position: absolute;
+    padding: 2px 4px;
+    top:-10px;
+    right: -10px;
+    background-color: var(--bluePuplePrimary);
+    color: white;
+    font-size: 13px;
+    z-index: 1;
+
+} 
+.IconMenu{
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .menuDesktop {
+        display: none;
+    }
+    .iconCart{
+        margin-right:  20px;
+        
+    }
+    .IconMenu{
+        display: block;
+    }
+  }

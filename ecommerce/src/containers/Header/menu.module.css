@@ -1,0 +1,34 @@
+.menuDesktop{
+    width: 70%;
+    padding-top: 15px;
+}
+.menuDesktopWidth{
+    width: 30%;
+}
+.menuDesktop li,a{
+    display: inline;
+    margin: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family:var(--fontFamilyPrimary) ;
+    list-style-type: none;
+    color:var(--blackDefault);
+    text-decoration: none;
+}
+.menuDesktop a:hover{
+    color:var(--bluePuplePrimary);
+}
+@media only screen and (max-width: 992px) {
+    .menuDesktop li,a{
+        margin: 0 5px;
+     
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+   
+    .menuDesktop {
+        display: none;
+    }
+  }

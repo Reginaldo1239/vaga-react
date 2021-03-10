@@ -1,0 +1,20 @@
+.menuMobile{
+    width: 100%;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: var(--bluePuplePrimary);
+    color:white;
+}
+.menuMobile li{
+    padding: 5px;
+}
+.menuMobile a{
+    color:white;
+}
+.openMenuMobile{
+    max-height: 500px;
+}
+
