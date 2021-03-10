@@ -2,6 +2,8 @@
     position: relative;
     min-height: 100vh;
     background-color: var(--bluePuplePrimary);
+    color: white;
+
 }
 .infoPurchase{
     position: absolute;
@@ -12,9 +14,27 @@
     color:white;
 
 } 
+.infoPurchase a{
+    color: white;
+    font-size: 18px;
+}
 .infoPurchase div:last-child{
     cursor: pointer;
     text-decoration: underline;
     margin: 10px 0;
 
 } 
+
+@media only screen and (max-width: 992px) {
+    
+    }
+    
+@media only screen and (max-width: 600px) {
+    .infoPurchase{
+         font-size: 18px;
+         left: 40%;
+         transform: translate(-50%,-40%);
+         
+    } 
+   
+}
