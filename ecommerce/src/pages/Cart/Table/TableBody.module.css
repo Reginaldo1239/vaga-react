@@ -1,0 +1,46 @@
+.tableBody {
+    position: relative;
+    text-align: center;
+ 
+}
+
+
+ 
+.tableBody td{
+    position: relative;
+    width: 25%;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 5px 10px;
+
+}
+.close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+ 
+}
+.buttonCloseVariant{
+    font-size:17px ; 
+}
+
+
+.tableBody img{ 
+    width: 60%;
+}
+.bodyRowquantity{
+  width: 100%; 
+}
+.bodyRowquantity >div{
+    width: 55px;
+    display: inline-block;
+    margin:0px
+  }
+ 
+.inputBodyRowQuantity{
+  
+}
+.buttonBodyRowQuantity{
+    width: 35px;
+
+    
+}

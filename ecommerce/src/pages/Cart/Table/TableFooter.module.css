@@ -1,0 +1,11 @@
+.tableFooter  {
+    margin-top: 10px;
+   
+}
+
+.tableFooter td{
+    width: 20%;
+    border: none;
+    padding: 20px 5px;
+  
+}

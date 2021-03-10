@@ -1,0 +1,20 @@
+.cartTotal{
+    border: 1px solid  #e6e6e6;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+    padding: 2px 0;
+    border-bottom: 1px dotted #d9d9d9;
+    
+}
+.header h3{
+    padding: 5px 0;
+    
+    
+}
+.main{
+    margin: 20px 0;
+}
