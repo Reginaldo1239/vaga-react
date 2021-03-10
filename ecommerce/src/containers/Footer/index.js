@@ -31,8 +31,8 @@ export default function Footer(props){
                     <div className={Style.getInTouch}>
                          <h4>ENTRAR EM CONTATO</h4>
                          <div>
-Alguma pergunta? Informe-nos na loja no 8º anda
-r, 379 Hudson St, New York, NY 10018 ou ligue para (+1) 96 716 6879
+                                Alguma pergunta? Informe-nos na loja no 8º anda
+                                r, 379 Hudson St, New York, NY 10018 ou ligue para (+1) 96 716 6879
                          </div>
                     </div>
                     <div>
