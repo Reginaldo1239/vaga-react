@@ -1,9 +1,26 @@
 .products{
     width: 100%;
-   
     overflow-y: auto;
     max-height: 60vh;
 }
 .cartIsEmpty{
     padding: 15px;
 }
+
+@media only screen and (max-width: 992px) {
+    .products{
+        max-height: 65vh;
+    }
+}   
+        
+@media only screen and (max-width: 600px) {
+    .products{
+        max-height: 65vh;
+    }
+    }
+@media only screen and (max-width: 350px) {
+    .products{
+        max-height: 65vh;
+    }
+}
+    

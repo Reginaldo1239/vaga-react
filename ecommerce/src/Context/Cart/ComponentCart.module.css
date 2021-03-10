@@ -114,3 +114,59 @@
         display: none;
     }
 }
+
+
+
+@media only screen and (max-width: 992px) {
+.cart{
+    width: 90%;    
+ }
+}   
+    
+@media only screen and (max-width: 600px) {
+    .cart{
+        width: 100%;    
+     }
+     .shadow{
+        display: none;
+    
+    }
+    .container{
+        width: 95%;
+        margin-top: 5px;
+       
+    }
+    .header{
+        padding: 30px 0;
+    }
+    .header > div:first-child{
+     
+        padding: 0px 2px;
+      
+        
+    }
+
+}
+@media only screen and (max-width: 350px) {
+    .cart{
+        width: 100%;    
+     }
+     .shadow{
+        display: none;
+    
+    }
+    .container{
+        width: 95%;
+        margin-top: 5px;
+       
+    }
+    .header{
+        padding: 30px 0;
+    }
+    .header > div:first-child{
+     
+        padding: 0px 2px;
+      
+        
+    }
+}
