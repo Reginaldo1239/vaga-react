@@ -1,6 +1,6 @@
 import React,{useRef, useState,useEffect} from 'react';
 import className from 'classnames'
-import Style from './images.module.css';
+import Style from './Images.module.css';
 import StyleCommon from '../../common.module.css';
 export default function Images(props){
     let {infoProduct} = props;

@@ -15,3 +15,28 @@
     width: 100%;
     margin: 50px;
 }
+@media only screen and (max-width: 992px) {
+    .listEvaluation > div{
+        padding: 0;
+
+      
+    }
+}
+    
+@media only screen and (max-width: 600px) {
+    .listEvaluation{
+        padding: 0px;
+    }
+    .listEvaluation > header{
+
+        padding: 0 15px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .listEvaluation > div{
+        padding: 0 5px;
+
+      
+    }
+
+}

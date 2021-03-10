@@ -13,3 +13,21 @@
     width: 80%;
 }
 
+
+@media only screen and (max-width: 992px) {
+    .listImages{
+        width: 20%;
+    }
+    .singleImage{
+        width: 75%;
+    }
+}
+    
+@media only screen and (max-width: 600px) {
+    .listImages{
+        width: 20%;
+    }
+    .singleImage{
+        width: 75%;
+    }
+}

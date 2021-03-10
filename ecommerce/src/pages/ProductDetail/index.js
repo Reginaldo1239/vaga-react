@@ -7,7 +7,7 @@ import Description from './Description';
 import ListEvaluation from './ListEvaluation';
 
 import {getInfoSiteApi} from './indexApi';
-import Main from './main';
+import Main from './Main';
 
 export default function ProductDetail(props){
     const [infoProduct,setInfoProduct] = useState([]);
