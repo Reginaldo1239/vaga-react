@@ -29,3 +29,5 @@ para logar no sistema use
     email =rock_apps@gmail.com 
     senha = rock@2020
 ```
+
+<img src='https://github.com/Reginaldo1239/vaga-react/blob/main/ecommerce/src/assets/screenshot/screenshot0.png'>
