@@ -5,7 +5,6 @@ import TableBody from './TableBody';
 import TableFooter from './TableFooter';
 import Style from './index.module.css';
 export default function Table(props){
-    let v = [0,1,2,3,4,5] ;
     let {productsSelected} = useCart();
     return(
         <table className={Style.table}>
