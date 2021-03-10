@@ -3,7 +3,7 @@
 desenvolvido usando react,
 imagens hospedada no s3
 
-## Installation
+## roda o projeto
 
 clone o repósitorio
 
@@ -20,7 +20,7 @@ json-server --watch db.json --port 3001
 na pasta ecommerce
 ```bash
  npm install
-
+ npm start
 ```
 
 ## login
