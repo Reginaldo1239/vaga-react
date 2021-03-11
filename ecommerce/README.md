@@ -11,6 +11,10 @@ clone o repósitorio
  git clone https://github.com/Reginaldo1239/vaga-react.git
 
 ```
+na pasta ecommerce
+```bash
+ npm install
+```
 na pasta ecommerce/src ,inicie o json-server
 ```bash
 json-server --watch db.json --port 3001
@@ -19,7 +23,6 @@ json-server --watch db.json --port 3001
 
 na pasta ecommerce
 ```bash
- npm install
  npm start
 ```
 
